@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='main_style.css' />
+        <div class="topmod">
+          <span class="tm"><b>Methodology</b></span>
+        </div>
+        <div class="toolbox">
+            <button class="topic" class="topic">Assign topic to new document</button>
+            <button class="btn" class="methodology">Methodology</button>
+            <button class="btn" class="details">Get more details</button>
+        </div>
+    </head>
+
+    <body>
+        <table class="text_intro">
+          <tr>
+            <td class="column10">            <h3>My aim was to:</h3>
+                <ul>
+                <li>Retrieve all the articles from the given <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Mechanisms+of+Antibiotic+Resistance&filter=simsearch2.ffrft", style="color: white;">link</a></li>
+                <li>Clean the data</li>
+                <li>Build a corpus on it</li>
+                <li>Create the most efficient LDA model</li>
+                <li>Train it on the 80% of the corpus</li> 
+                <li>Assign to each document a topic with the highest weight</li> 
+                <li>Divide articles according to their dominant topics </li> 
+                <li>Return the weights of words in each topic and the weight of topic in each document </li> 
+                <li>Try the model in the unseen documents, assign created topics to them</li> 
+                <li>Find the topic of the document</li> 
+                <li>Return matrices of probability distributions, coherence and perplexity scores, number of documents with each topic . </li> 
+                <li>Visualize the output for better understanding and analyzing</li> 
+                <li>Analyze the results </li> 
+                </ul>
+            </td>
+            <td class="column1"><img class="pict" src="pictures/doc_class.png" alt="antibiotic resistance"></td>
+          </tr>
+        </table>
+        <div class="tools1">
+            <td class="column"><h3>As a result we can : </h3>
+                <ul>
+                    <li>find hidden structures in documents, predominant words used in them and create topics</li>
+                    <li>sort out a large amount of data according to its meaning, which helps in organizing and further use of documents</li>
+                    <li>extract meaningful structures from texts, summarize them and predict what they can be about</li>
+                    <li>evaluate our outputs.
+                    
+                </ul>
+                <p>In my final version of the program I used an NMF model</p> 
+                <p>Non-Negative Matrix Factorization is a statistical method to reduce the dimension of the input corpora. It uses factor analysis method to provide comparatively less weightage to the words with less coherence.</p>
+              <img class= "matrix" src="pictures/nmf_m2.png" alt="antibiotic resistance">
+              <figcaption></figcaption>
+            </figure>
+           
+          </div>
+    </body>
+</html>

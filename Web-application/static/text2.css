@@ -1,0 +1,186 @@
+textarea
+{
+    height:200px;
+    width: 630px;
+    font-size:10pt;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #041172;
+    resize: vertical;
+    transition: width 0.4s ease-in-out;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.submit{
+    height:40px;
+    width: 630px;
+    margin: auto;
+    display: block;
+    background-color:#041172;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+.enter {
+    font-size:30pt;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #041172;
+}
+
+.btn {
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 10;
+    padding: 10px 20px;
+    border-radius: 13px;
+    float: right;
+    margin-right: 10px; 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .topmod {
+    height: 41px; /* same as the font-size */
+    overflow: hidden; /* hides the overflow */
+    margin-bottom: 0;
+    padding-top: 5;
+    margin-left: 30px;
+  }
+  .tm {
+    color: #041172; 
+    font-size: 36px;
+    margin-left: 5;
+  }
+.topic{
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #041172;
+  font-size: 16px;
+  margin-top: 10;
+  padding: 10px 20px;
+  border-radius: 13px;
+  float: right;
+  margin-right: 10px; 
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.toolbox{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+.btn:hover {
+    background-color: #041172;
+    color: white;
+  }
+.text_intro {
+    align-items: center;
+    background-color:#041172;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-right: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tools{
+    background-color:white;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-right: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 96%;
+  }
+  table {
+    background-color:white;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-right: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+  }
+  
+  .column1 {
+    width: 80%;
+    margin-right: 0;
+  }
+  
+  .column2 {
+    width: 20%;
+    text-align: right;
+  }
+  .comp {
+    width: 25%;
+    vertical-align: top;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .intro{
+    width: 80%;
+    text-align: left;
+  }
+  
+  .tmp{
+    width: 40%;
+    padding-left: 20px;
+    text-align: right;
+  }
+  
+  .pict{
+    width: 500px;
+    height: auto;
+    border-radius: 13px;
+    text-align: left;
+  }
+.wordclouds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wordclouds figure {
+  margin: 0;
+}
+
+.wordclouds img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+  
+  .wordclouds figcaption {
+    font-size: 14px; /* set font size for caption */
+    text-align: center; /* center the caption text */
+  }

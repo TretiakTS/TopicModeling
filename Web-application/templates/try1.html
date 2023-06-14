@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='text2.css') }}" />
+        <div class="topmod">
+          <span class="tm"><b>Topic Modeling</b></span>
+        </div>
+        <div class="toolbox">
+            <button class="topic" class="topic">Assign topic to new document</button>
+            <button class="btn" class="methodology">Methodology</button>
+            <button class="btn" class="details">Get more details</button>
+        </div>
+    </head>
+
+    <body>
+        <div class="text_intro">
+            <p><h3>Introduction:</h3></p>
+            <p>After trying the most popular topic modeling tools, the best performance was observed using the NMF model.</p>
+            <p>It appeared to be: </p>
+            <ul>
+               <li>easy to implement</li>
+               <li>the topics are distinguishing and mostly consist of useful medical terms </li>
+               <li>the distribution of documents between the topics is quite equal </li>
+               <li>fast in loading</li>
+            </ul> 
+        </div>
+        <div class="tools">
+          <p>Topics created by the model:</p>
+          <ol>
+            <li>Antibiotic resistance</li>
+            <li>Bacteria</li>
+            <li>Fungal</li>
+            <li>Biofilms</li>
+            <li>Mutation</li>
+          </ol>
+        </div>
+        <div class="wordclouds">
+         <figure>
+            <img src="{{ url_for('static', filename='images/nmf_1.png') }}" alt="antibiotic resistance">
+            <figcaption>Topic 1: antibiotic resistance</figcaption>
+          </figure>
+          <figure>
+            <img src="{{ url_for('static', filename='images/nmf_2.png') }}" alt="bacteria">
+            <figcaption>Topic 2: bacteria</figcaption>
+          </figure>
+          <figure>
+            <img src="{{ url_for('static', filename='images/nmf_3.png') }}" alt="fungal">
+            <figcaption>Topic 3: fungal</figcaption>
+          </figure>
+          <figure>
+            <img src="{{ url_for('static', filename='images/nmf_4.png') }}" alt="biofilms">
+            <figcaption>Topic 4: biofilms</figcaption>
+          </figure>
+          <figure>
+            <img src="{{ url_for('static', filename='images/nmf_5.png') }}" alt="mutation">
+            <figcaption>Topic 5: mutation</figcaption>
+          </figure>
+          </div>
+          <p class="enter">Assign the topic to your document:</p> 
+          <form action="/try1" method="post">
+            <p><textarea class="new_doc" type="text" placeholder="Enter your document" name="nm"></textarea></p>
+            <p><input type="submit" class="submit" value="submit"></p>
+         </form>
+         {% if topic %}
+             <h3>The topic is: {{ topic }}</h3>
+         {% endif %}
+    </body>
+</html>
